@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="equip.html">Equipment</a></li>
+            <li><a href="player.html">Famous Players</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to the World of Tennis</h1>
+
+    <div id="container">
+        <p>Tennis is an exciting sport played by millions across the globe. Whether you're a beginner or a seasoned pro, there's always something new to learn and improve.</p>
+        <button id="toggle-info">Show More Info</button>
+        <div id="extra-info" style="display:none;">
+            <p>Tennis matches can be played as singles (one player on each side) or doubles (two players on each side). The game is played with a racket and a tennis ball, and the aim is to hit the ball over the net and into the opponent's court.</p>
+            <ul>
+                <li>Grand Slam Tournaments: Australian Open, French Open, Wimbledon, US Open</li>
+                <li>Famous surfaces: Grass, Clay, Hard</li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="/images/tennis ball.jpg" id="ball" alt="Tennis Ball" />
+        </div>
+        <div>
+            <img src="/images/match.jpg" width="700" height="600" id="img1" alt="Tennis Match" />
+        </div>
+
+        <div class="quiz-section">
+            <h2>Quick Quiz</h2>
+            <div class="quiz-question">
+                <p>1. What is the term for a score of zero in tennis?</p>
+                <input type="text" class="quiz-input" data-answer="love" placeholder="Your answer...">
+            </div>
+            <div class="quiz-question">
+                <p>2. What is the maximum number of sets in a men's Grand Slam match?</p>
+                <input type="text" class="quiz-input" data-answer="5" placeholder="Your answer...">
+            </div>
+            <div class="quiz-question">
+                <p>3. Which surface is the French Open played on?</p>
+                <input type="text" class="quiz-input" data-answer="clay" placeholder="Your answer...">
+            </div>
+            <button id="submit-answer">Submit</button>
+            <p id="quiz-feedback"></p>
+        </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

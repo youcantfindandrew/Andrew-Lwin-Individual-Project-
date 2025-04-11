@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="equip.html">Equipment</a></li>
+            <li><a href="player.html">Famous Players</a></li>
+        </ul>
+    </nav>
+
+    <h1>Equipment</h1>
+
+    <section class="content-section">
+        <h2>Essential Gear</h2>
+        <ul class="interactive-list">
+            <li onclick="showEquipmentInfo('racket')">Tennis Racket</li>
+            <li onclick="showEquipmentInfo('balls')">Tennis Balls</li>
+            <li onclick="showEquipmentInfo('shoes')">Tennis Shoes</li>
+            <li onclick="showEquipmentInfo('clothing')">Tennis Clothing</li>
+        </ul>
+        <div id="equipment-info" class="info-box"></div>
+    </section>
+
+    <section class="content-section">
+        <h2>Did You Know?</h2>
+        <p id="fun-fact">Click the button to learn a fun fact!</p>
+        <button onclick="displayFunFact()">Show Fun Fact</button>
+    </section>
+
+    <section class="content-section">
+        <h2>Gear Comparison Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Material</th>
+                    <th>Average Cost</th>
+                    <th>Popular Brands</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Racket</td>
+                    <td>Graphite, Aluminum</td>
+                    <td>$80 - $250</td>
+                    <td>Wilson, Babolat, Head</td>
+                </tr>
+                <tr>
+                    <td>Balls</td>
+                    <td>Rubber & Felt</td>
+                    <td>$3 - $10 (per can)</td>
+                    <td>Penn, Wilson</td>
+                </tr>
+                <tr>
+                    <td>Shoes</td>
+                    <td>Synthetic, Rubber</td>
+                    <td>$60 - $150</td>
+                    <td>Nike, Adidas, Asics</td>
+                </tr>
+                <tr>
+                    <td>Clothing</td>
+                    <td>Cotton, Dri-Fit</td>
+                    <td>$20 - $100</td>
+                    <td>Nike, Adidas, Fila</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
